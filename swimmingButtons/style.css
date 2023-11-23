@@ -57,8 +57,8 @@
     -webkit-filter: blur(16px);
     filter: blur(16px);
     left: 0;
-    -webkit-animation: "flash" 4s infinite ease;
-    animation: "flash" 4s infinite ease;
+    -webkit-animation: "flash" 4s infinite ease; /* Тут можем менять скорость блика на кнопке */
+    animation: "flash" 4s infinite ease; /* Тут можем менять скорость блика на кнопке */
     z-index: 0;
 }
 
@@ -80,9 +80,11 @@
 }
 
 .swimmingButtons-btn_call svg {
-    -webkit-animation: rummage 0.5s infinite ease;
-    animation: rummage 0.5s infinite ease;
+    -webkit-animation: rummage 0.5s infinite ease; /* Тут можем менять скорость тряски иконки телефона */
+    animation: rummage 0.5s infinite ease; /* Тут можем менять скорость тряски иконки телефона */
 }
+
+/* Тут настройки анимации. Можно пробовать что-то свое делать */
 
 @-webkit-keyframes flash {
     0% {
