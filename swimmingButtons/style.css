@@ -1,0 +1,167 @@
+/* Стили для ПК версии */
+@media screen and (min-width: 1024px) {
+    .swimmingButtons {
+        display: none;
+    }
+}
+
+/* Стили для мобильных */
+.swimmingButtons {
+    z-index: 9999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 20px;
+    bottom: 20px;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.swimmingButtons-btn_request {
+    border-radius: 40px;
+    padding: 12px 40px;
+    color: #fff;
+    background-color: #00A42E; /* меняет цвет кнопки */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+
+.swimmingButtons-btn_request::after {
+    content: "";
+    display: block;
+    width: 40px;
+    -webkit-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg);
+    position: absolute;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-filter: blur(16px);
+    filter: blur(16px);
+    left: 0;
+    -webkit-animation: "flash" 4s infinite ease;
+    animation: "flash" 4s infinite ease;
+    z-index: 0;
+}
+
+.swimmingButtons-btn_call {
+    border-radius: 40px;
+    padding: 12px;
+    color: #fff;
+    background-color: #00A42E; /* меняет цвет кнопки */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.swimmingButtons-btn_call svg {
+    -webkit-animation: rummage 0.5s infinite ease;
+    animation: rummage 0.5s infinite ease;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        left: -40%;
+    }
+
+    50% {
+        left: 120%;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+@keyframes flash {
+    0% {
+        left: -40%;
+    }
+
+    50% {
+        left: 120%;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+@-webkit-keyframes rummage {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    25% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+
+    75% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+@keyframes rummage {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    25% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+
+    75% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
