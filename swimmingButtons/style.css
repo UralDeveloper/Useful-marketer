@@ -82,7 +82,7 @@
 .swimmingButtons-btn_call svg {
     -webkit-animation: rummage 0.5s infinite ease; /* Тут можем менять скорость тряски иконки телефона */
     animation: rummage 0.5s infinite ease; /* Тут можем менять скорость тряски иконки телефона */
-    fill: #fff !important
+    fill: #fff !important /* Изменение цвета иконки */
 }
 
 /* Тут настройки анимации. Можно пробовать что-то свое делать */
